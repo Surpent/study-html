@@ -8,59 +8,26 @@
     </head>
     <body>
     <!--
-        checkbox
-        radio
-        label
+        HTML5から使える機能
+        Safariでは対応していなかった・・・
+        email
+        date
+        number
+            required 入力必須
+            novalidate 入力必須を無視できる
     -->
 
     <article>
         <h1>アンケート</h1>
         <form action="survey.php" method="post">
-            <!-->メールアドレス　初期入力あり</!-->
-            <p>メールアドレス: <input type="text" name="email"
-             size="50" maxlength="24" value="abcde" disabled></p>
-            <!-->セレクトフォーム</!-->
-            <p>City: 
-                <select name="city">
-                    <option value="tokyo">Tokyo</option>
-                    <option value="sapporo" selected>Sapporo</option>
-                    <option value="osaka">Osaka</option>
-                    <option value="kyoto">Kyoto</option>
-                    <option value="fukuoka">Fukuoka</option>
-                    <option value="nagoya">Nagoya</option>
-                </select>
-            </p>
-            <hr>
-            <!-->複数選択できるやつ</!-->
-            <p>City: 
-                <select name="city" multiple>
-                    <option value="tokyo">Tokyo</option>
-                    <option value="sapporo" selected>Sapporo</option>
-                    <option value="osaka">Osaka</option>
-                    <option value="kyoto">Kyoto</option>
-                    <option value="fukuoka">Fukuoka</option>
-                    <option value="nagoya">Nagoya</option>
-                </select>
-            </p>
-            <hr>
-            <!-->複数選択できるやつ 最初からエリア表示数を指定</!-->
-            <p>City: 
-                <select name="city" multiple size="6">
-                    <option value="tokyo">Tokyo</option>
-                    <option value="sapporo" selected>Sapporo</option>
-                    <option value="osaka">Osaka</option>
-                    <option value="kyoto">Kyoto</option>
-                    <option value="fukuoka" selected>Fukuoka</option>
-                    <option value="nagoya">Nagoya</option>
-                </select>
-            </p>
-
-
+            <!--メールアドレス　初期入力あり -->
+            <p>メールアドレス: <input type="email" name="email"
+             size="50" maxlength="24" value="surpenter@gmail.com" required></p>
+            <p>誕生日: <input type="date" name="birthday"></p>
+            <p>料金: <input type="number" name="price" value="1200"></p>
 
             <p><input type="submit" value="送信！"></p>
         </form>
     </article>
-
-
     </body>
 </html>
