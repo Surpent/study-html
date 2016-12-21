@@ -19,16 +19,44 @@
             <!-->メールアドレス　初期入力あり</!-->
             <p>メールアドレス: <input type="text" name="email"
              size="50" maxlength="24" value="abcde" disabled></p>
-             <p>
-                 Phone:
-                 <label><input type="checkbox" name="phone" value="android"> Android</label>
-                 <input type="checkbox" name="phone" value="iphone" id="iphone" checked><label for="iphone"> iPhone</label>
-             </p>
-             <p>
-                 Color:
-                 <input type="radio" name="color" value="white" checked> White
-                 <input type="radio" name="color" value="black"> Black
-             </p>
+            <!-->セレクトフォーム</!-->
+            <p>City: 
+                <select name="city">
+                    <option value="tokyo">Tokyo</option>
+                    <option value="sapporo" selected>Sapporo</option>
+                    <option value="osaka">Osaka</option>
+                    <option value="kyoto">Kyoto</option>
+                    <option value="fukuoka">Fukuoka</option>
+                    <option value="nagoya">Nagoya</option>
+                </select>
+            </p>
+            <hr>
+            <!-->複数選択できるやつ</!-->
+            <p>City: 
+                <select name="city" multiple>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="sapporo" selected>Sapporo</option>
+                    <option value="osaka">Osaka</option>
+                    <option value="kyoto">Kyoto</option>
+                    <option value="fukuoka">Fukuoka</option>
+                    <option value="nagoya">Nagoya</option>
+                </select>
+            </p>
+            <hr>
+            <!-->複数選択できるやつ 最初からエリア表示数を指定</!-->
+            <p>City: 
+                <select name="city" multiple size="6">
+                    <option value="tokyo">Tokyo</option>
+                    <option value="sapporo" selected>Sapporo</option>
+                    <option value="osaka">Osaka</option>
+                    <option value="kyoto">Kyoto</option>
+                    <option value="fukuoka" selected>Fukuoka</option>
+                    <option value="nagoya">Nagoya</option>
+                </select>
+            </p>
+
+
+
             <p><input type="submit" value="送信！"></p>
         </form>
     </article>
