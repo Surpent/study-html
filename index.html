@@ -6,15 +6,20 @@
         <title>はじめてのHTML</title>
         <link rel="shortcut icon" href="favicon.ico"> <!-- アイコン -->
 
-        <!-- コメント -->
         <!--
-        <style>
-            body { background: skyblue; }
-        </style>
+            グローバル属性
+            id: 一つしかない要素
+            class: 複数ある要素
+            style: スタイルを直接指定
         -->
         <link rel="stylesheet" href="mystyles.css">
     </head>
     <body>
-        <p>こんにちは！</p>
+        <p id = "message">こんにちは！</p>
+        <p class = "message active">こんにちは！</p>
+        <p class = "message">こんにちは！</p>
+        <p class = "message" style = "background: skyblue">空色の背景になるよ
+            
+        </p>
     </body>
 </html>
