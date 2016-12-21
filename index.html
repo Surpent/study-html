@@ -8,11 +8,8 @@
     </head>
     <body>
     <!--
-        input
-            text
-            submit
-            password
-            hidden
+        textarea　複数行入力できる
+        button　JSで何かの処理を行うことができる
     -->
 
     <article>
@@ -20,21 +17,14 @@
         <form action="survey.php" method="post">
             <!-->メールアドレス　初期入力あり</!-->
             <p>メールアドレス: <input type="text" name="email"
-             size="50" maxlength="24" value="abcde"></p>
+             size="50" maxlength="24" value="abcde" disabled></p>
+             <p>
+                 コメント
+                 <textarea name="comment" cols="30" rows="3">コメントを記入しよう</textarea>
+             </p>
             <p><input type="submit" value="送信！"></p>
-        </form>
-
-        <h1>アンケート2</h1>
-        <form action="survey.php" method="post">
-            <!-->メールアドレス　プレースホルダー</!-->
-            <p>メールアドレス: <input type="text" name="email"
-             size="50" maxlength="24" placeholder="please enter your email"></p>
-            <!-->パスワード</!-->
-            <p>パスワード: <input type="password" name="password"
-             size="50" maxlength="8"></p>
-             <!--> あらかじめ分かっているユーザーIDなど</!-->
-             <input type="hidden" name="user_id" value="12345">
-            <p><input type="submit" value="送信！"></p>
+            <p><button type="button">意味のないボタン</button></p>
+            <p><button type="submit" disabled>無効なボタン</button></p>
         </form>
     </article>
 
