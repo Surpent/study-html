@@ -8,19 +8,32 @@
     </head>
     <body>
     <!--
-        <form action=""></form>
-
-        form
-            action どこに送るか
-            method get / post
-
         input
+            text
+            submit
+            password
+            hidden
     -->
 
     <article>
         <h1>アンケート</h1>
         <form action="survey.php" method="post">
-            <p>メールアドレス: <input type="text" name="email"></p>
+            <!-->メールアドレス　初期入力あり</!-->
+            <p>メールアドレス: <input type="text" name="email"
+             size="50" maxlength="24" value="abcde"></p>
+            <p><input type="submit" value="送信！"></p>
+        </form>
+
+        <h1>アンケート2</h1>
+        <form action="survey.php" method="post">
+            <!-->メールアドレス　プレースホルダー</!-->
+            <p>メールアドレス: <input type="text" name="email"
+             size="50" maxlength="24" placeholder="please enter your email"></p>
+            <!-->パスワード</!-->
+            <p>パスワード: <input type="password" name="password"
+             size="50" maxlength="8"></p>
+             <!--> あらかじめ分かっているユーザーIDなど</!-->
+             <input type="hidden" name="user_id" value="12345">
             <p><input type="submit" value="送信！"></p>
         </form>
     </article>
