@@ -8,8 +8,9 @@
     </head>
     <body>
     <!--
-        textarea　複数行入力できる
-        button　JSで何かの処理を行うことができる
+        checkbox
+        radio
+        label
     -->
 
     <article>
@@ -19,12 +20,16 @@
             <p>メールアドレス: <input type="text" name="email"
              size="50" maxlength="24" value="abcde" disabled></p>
              <p>
-                 コメント
-                 <textarea name="comment" cols="30" rows="3">コメントを記入しよう</textarea>
+                 Phone:
+                 <label><input type="checkbox" name="phone" value="android"> Android</label>
+                 <input type="checkbox" name="phone" value="iphone" id="iphone" checked><label for="iphone"> iPhone</label>
+             </p>
+             <p>
+                 Color:
+                 <input type="radio" name="color" value="white" checked> White
+                 <input type="radio" name="color" value="black"> Black
              </p>
             <p><input type="submit" value="送信！"></p>
-            <p><button type="button">意味のないボタン</button></p>
-            <p><button type="submit" disabled>無効なボタン</button></p>
         </form>
     </article>
 
